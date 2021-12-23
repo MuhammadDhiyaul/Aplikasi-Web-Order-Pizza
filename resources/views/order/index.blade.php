@@ -11,7 +11,7 @@
                 </nav>
 
                 <div class="card ">
-                    <div class="card-header">Order
+                    <div class="card-header">order
                         <a style="float:right;" href="{{route('pizza.index')}}"><button class="bnt btn-secondary btn-sm" style="margin-left: 5px;">View Pizza</button></a>
                         <a style="float:right;" href="{{route('pizza.create')}}"><button class="bnt btn-secondary btn-sm">Add new Pizza</button></a>
     
@@ -39,7 +39,7 @@
                                 @foreach ($orders as $order)
                                     <tr>
                                         <td>{{ $order->user->name }}</td>
-                                        <td >{{ $order->user->email }}<br>{{$order->phone}}</td>
+                                    <td >{{ $order->user->email }}<br>{{$order->phone}}</td>
                                         <td>{{ $order->date }}/{{ $order->time }}</td>
                                         <td>{{ $order->pizza->name }}</td>
                                         <td>{{ $order->small_pizza }}</td>
